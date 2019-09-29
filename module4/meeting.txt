@@ -1,0 +1,4 @@
+When you see the fox - get out of his line of sight
+Track how long it's been since you've seen the fox
+If it's been awhile since you've seen the fox, start to move towards the center of the board.  
+

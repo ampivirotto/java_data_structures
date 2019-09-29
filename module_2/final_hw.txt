@@ -1,0 +1,41 @@
+URL: https://www.kaggle.com/jealousleopard/goodreadsbooks
+
+This data set comes from Goodreads and includes information such as book title, author, average rating, isbn, number of pages, number of ratings, and various other columns.  
+This data set arose as an individual wanted a non-complicated data set to contain the ratings of books while previous data sets included 
+extraneous information that made the data hard to use.  I took just the number of pages column for my data set.  
+
+Using n of 0:
+0: 18
+1: 731
+2: 985
+3: 890
+4: 548
+5: 283
+6: 213
+7: 129
+8: 121
+9: 92
+
+Using n of 1:
+0: 547
+1: 332
+2: 569
+3: 332
+4: 406
+5: 373
+6: 407
+7: 325
+8: 397
+9: 322
+
+Using n of 2:
+0: 877
+1: 203
+2: 512
+3: 201
+4: 504
+5: 202
+6: 474
+7: 238
+8: 577
+9: 222
