@@ -45,7 +45,7 @@ public class homework {
         return newList; //return newList
     }
 
-    public static <E> void removeAllInstances(ArrayList<E> list, int item){ //takes in a list and removes instances of item
+    public static <E> void removeAllInstances(ArrayList<E> list, E item){ //takes in a list and removes instances of item
         boolean repeat = true;
         while(repeat == true) {
             repeat = false;
