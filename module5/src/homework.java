@@ -6,14 +6,16 @@ import java.util.List;
 public class homework {
 
     public static <E> boolean unique(List<E> list){  //takes in generic list and returns true if all items unique
-        for (int i = 0; i < list.size(); i++) { //start with item 1 in list
-            for(int j = i +1; j<list.size(); j++){ //check it against all other items
-                if (list.get(i).equals(list.get(j))){ //compare items, if not equal return false
-                    return false;
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.size(); j++) {
+                if(j + 1 < list.size() && i != j){
+                    if(list.get(i).equals(list.get(j))){
+                        return false;
+                    }
                 }
             }
         }
-        return true; //if nothing is the same, return true
+        return true;
     }
 
     public static List<Integer> allMultiples(List<Integer> list, int num){ //loop through items to check for multiples of num
