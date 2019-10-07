@@ -13,7 +13,7 @@ public class homework {
                 }
             }
         }
-        return true; //if nothing is the same, return true
+        return true; //if nothing is the same, return true  - quadratic
     }
 
     public static List<Integer> allMultiples(List<Integer> list, int num){ //loop through items to check for multiples of num
@@ -23,7 +23,7 @@ public class homework {
                 updateList.add(item);  //if so add to updated list
             }
         }
-        return updateList; //return updated list
+        return updateList; //return updated list  - linear
     }
 
     public static List<String> allStringsOfSize(List<String> list, int num) { //loop through items and add all strings of size num to new list
@@ -34,7 +34,7 @@ public class homework {
                 updateList.add(s); //add item to updatedList
             }
         }
-        return updateList; //return updated list
+        return updateList; //return updated list  - linear
     }
 
     public static List<String> stringToListOfWords(String word){ //take string and divide it into its words

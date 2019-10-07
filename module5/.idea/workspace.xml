@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f0eb65d-a2c2-41ac-9334-07c4d0656f4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module5/homework.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module5/homework.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,7 +78,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
