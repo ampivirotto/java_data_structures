@@ -51,7 +51,11 @@ public class homework {
         while(repeat) { //while repeat is true stay in loop
             repeat = false; //each time around repeat is set to false unless if statement trips
             for (int i = 0; i < list.size(); i++) { //for each item in list
+                System.out.println("");
+                System.out.println("");
                 if (list.get(i).equals(item)) { //if item in list equals generic item parameter
+                    System.out.println("");
+                    System.out.println("");
                     list.remove(i); //remove item
                     repeat = true; //then set repeat to true to loop back through again to catch any repeats that may have been missed by indices changing
                 }//end if
@@ -61,7 +65,7 @@ public class homework {
 
     public static void main(String[] args) {
 
-        //test uniqueness 2.1
+/*        //test uniqueness 2.1
         ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 3, 4));
         boolean output1 = unique(list1);
 
@@ -85,12 +89,16 @@ public class homework {
         //test stringToListOfWords 2.4
         String sentence = "Hi, how are you doing today? I am fine.";
         ArrayList<String> outputList3 = new ArrayList<>(stringToListOfWords(sentence));
-        System.out.println(outputList3);
+        System.out.println(outputList3);*/
 
         //test removeAllInstances 2.5
-        ArrayList<Integer> list5 = new ArrayList<>(Arrays.asList(1, 4, 5, 6, 5, 5, 2, 4, 3, 3, 5, 5, 5, 5, 6));
+        ArrayList<Integer> list5 = new ArrayList<>(Arrays.asList(1, 4, 6, 5, 2, 4, 3, 3, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6));
+        long start = System.currentTimeMillis( );
         removeAllInstances(list5, 5);
-        System.out.println(list5);
+        long end = System.currentTimeMillis( );
+
+        long interval = end - start;
+        System.out.println(interval);
 
     }
 }
