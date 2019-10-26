@@ -30,12 +30,47 @@ public class MazeGridPanel extends JPanel{
 		Cell finish = maze[rows-1][cols-1];
 		finish.setBackground(Color.RED);
 		stack.push(start);
-		
-		while() {
-			Cell current = stack.peek();
-			
-			visited(current.row,current.col)
-			//maze[current.row ][current.col] 
+
+		Cell current = stack.peek();
+
+		while(current.getBackground() != Color.RED  && !stack.isEmpty()) {
+			current = stack.peek();
+			if (!current.northWall) { //north wall does not exist
+				Cell newCell = maze[current.row - 1][current.col];
+				if (!visited(newCell.row, newCell.col)) {
+					stack.push(newCell);
+					newCell.setBackground(Color.GREEN);
+					continue;
+				}
+			}
+			if (!current.southWall) {
+				Cell newCell = maze[current.row + 1][current.col];
+				if (!visited(newCell.row, newCell.col)) {
+					stack.push(newCell);
+					newCell.setBackground(Color.GREEN);
+					continue;
+				}
+			}
+			if (!current.eastWall) {
+				Cell newCell = maze[current.row][current.col + 1];
+				if (!visited(newCell.row, newCell.col)) {
+					stack.push(newCell);
+					newCell.setBackground(Color.GREEN);
+					continue;
+				}
+			}
+			if (!current.westWall) {
+				Cell newCell = maze[current.row][current.col - 1];
+				if (!visited(newCell.row, newCell.col)) {
+					stack.push(newCell);
+					newCell.setBackground(Color.GREEN);
+					continue;
+				}
+			} else{
+				current.setBackground(Color.GRAY);
+				Cell deadend = stack.pop();
+			}
+			System.out.println(current);
 		}
 
 	}
