@@ -34,13 +34,18 @@ public class MazeGridPanel extends JPanel{
 		Cell current = stack.peek();
 
 
-		while(current.getBackground() != Color.RED  && !stack.isEmpty()) {
+        while( !(current.getBackground() == Color.RED) && !stack.isEmpty()) {
             current = stack.peek();
+            if (current.getBackground() == Color.RED) {
+                System.out.println("END");
+                break;
+            }else{
+                current.setBackground(Color.GREEN);
+            }
             if (!current.northWall) { //north wall does not exist
                 Cell newCell = maze[current.row - 1][current.col];
                 if (!visited(newCell.row, newCell.col)) {
                     stack.push(newCell);
-                    newCell.setBackground(Color.GREEN);
                     continue;
                 }
             }
@@ -48,7 +53,6 @@ public class MazeGridPanel extends JPanel{
                 Cell newCell = maze[current.row + 1][current.col];
                 if (!visited(newCell.row, newCell.col)) {
                     stack.push(newCell);
-                    newCell.setBackground(Color.GREEN);
                     continue;
                 }
             }
@@ -56,7 +60,6 @@ public class MazeGridPanel extends JPanel{
                 Cell newCell = maze[current.row][current.col + 1];
                 if (!visited(newCell.row, newCell.col)) {
                     stack.push(newCell);
-                    newCell.setBackground(Color.GREEN);
                     continue;
                 }
             }
@@ -64,12 +67,8 @@ public class MazeGridPanel extends JPanel{
                 Cell newCell = maze[current.row][current.col - 1];
                 if (!visited(newCell.row, newCell.col)) {
                     stack.push(newCell);
-                    newCell.setBackground(Color.GREEN);
                     continue;
                 }
-            }
-            if (current.getBackground() == Color.RED) {
-                break;
             }
             current.setBackground(Color.GRAY);
             Cell deadend = stack.pop();
