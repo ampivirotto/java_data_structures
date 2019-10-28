@@ -20,6 +20,9 @@ public class MazeGridPanel extends JPanel{
 		Stack<Cell> stack  = new Stack<Cell>();
 		Cell start = maze[0][0];
 		stack.push(start);
+
+
+
 	}
 
 	//homework
