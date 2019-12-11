@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="jung">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/collections-generic-4.01.jar!/" />
+      <root url="jar://$PROJECT_DIR$/concurrent-1.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/colt-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/j3d-core-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-3d-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-3d-demos-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-algorithms-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-api-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-graph-impl-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-io-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-jai-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-jai-samples-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-samples-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jung-visualization-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/stax-api-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/vecmath-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wstx-asl-3.2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
