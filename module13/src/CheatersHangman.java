@@ -21,6 +21,7 @@ public class CheatersHangman {
                 String line = scanner.nextLine();
                 line = line.strip();
                 int charCount = line.length();
+
                 if(mainDictionary.containsKey(charCount)){
                     List list =  mainDictionary.get(charCount);
                     list.add(line.toLowerCase());
